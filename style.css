@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+body,
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.preview::before {
+  content: 'selected date:';
+  display: block;
+  font-size: 0.6rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+#calendar ul {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  padding: 0;
+}
+
+#calendar ul li {
+  list-style: none;
+}
+
+.selected {
+  color: white;
+  background-color: tomato;
+  border-radius: 100%;
+}
+
+footer {
+  font-size: xx-small;
+  text-align: center;
+}

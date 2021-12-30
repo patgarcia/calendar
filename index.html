@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar Month | by Patricio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Calendar Month</h1>
+    <div>
+      <form onsubmit="((event) => event.preventDefault())(event)">
+        <input type="text" name="date" id="date" placeholder="e.g. 20 feb, 2002" />
+        <button id="submit" disabled>Get Month</button>
+      </form>
+    </div>
+    <p class="preview"></p>
+  </header>
+  <main>
+    <div id="calendar"></div>
+  </main>
+  <footer>
+    coded by <a href="https://patricio.work/">Patricio</a>
+  </footer>
+</body>
+<script src="calendar.js"></script>
+<script src="ui.js"></script>
+
+</html>
