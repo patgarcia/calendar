@@ -17,12 +17,14 @@
 <body>
   <header>
     <h1>Calendar Month</h1>
-    <div>
-      <form onsubmit="((event) => event.preventDefault())(event)">
-        <input type="text" name="date" id="date" placeholder="e.g. 20 feb, 2002" />
-        <button id="submit" disabled>Get Month</button>
-      </form>
-    </div>
+    <form onsubmit="((event) => event.preventDefault())(event)">
+      <label class="example" for="date">
+        e.g. 19 feb, 2002
+      </label>
+      <input type="text" name="date" id="date" placeholder="Type a date..." />
+      <button id="submit" disabled>Get Month</button>
+    </form>
+
     <p class="preview"></p>
   </header>
   <main>

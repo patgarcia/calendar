@@ -31,7 +31,7 @@ preview.innerText = calendar.date.toLocaleString('en-us', localeOptions);
 function onDateInputChange(ev) {
   ev.preventDefault();
   if (!ev.target.value.length) {
-    preview.innerText = 'Input a date';
+    preview.innerText = calendar.date.toLocaleString('en-us', localeOptions);
     return;
   }
   initDate = new Date(ev.target.value);
@@ -69,4 +69,5 @@ function handleCreateCalendar(ev) {
     ul.appendChild(currLi);
   });
   input.value = '';
+  submit.setAttribute('disabled', true);
 }
