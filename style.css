@@ -25,9 +25,7 @@ header {
 }
 
 header {
-  display: flex;
   align-items: center;
-  flex-direction: column;
 }
 
 .preview {
@@ -82,7 +80,7 @@ label.example {
 
 footer {
   font-size: calc(var(--flexible-font) * 0.9);
-  margin-top: 2em;
+  margin: calc(var(--flexible-font) * 2) auto calc(var(--flexible-font) * 0.9);
   color: #666;
 }
 
@@ -103,5 +101,10 @@ footer a:visited {
     display: flex;
     justify-items: stretch;
     flex-direction: column;
+    width: 90vw;
+  }
+  #calendar ul li {
+    list-style: none;
+    font-size: calc(var(--flexible-font) * 0.8);
   }
 }
